@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> BookStore </title>
+	<link rel="stylesheet" href="Style.css">
+    
+    <!--Bootstrap Icons-->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    
+</head> 
+<body>
+    
+    <!--Header-->
+    
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="Store.html"><img src="images/logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+				    <li><a href="Store.html">Home</a></li>
+				    <li><a href="Products-1.html">Products</a></li>
+                    <li><a href="About.html">About</a></li>
+				    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                    <li><a href="Cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" width="20px" height="20px"> </li>
+			     </ul>
+                </nav>
+                <!--<a href="Cart.html"><img src="images/cart.png" width="30px" height="30px"></a>-->
+            </div>
+            <div class="row">
+                <div class="start">
+                    <h1>Give Your Mind A<br>Place To Be Stranded</h1>
+                    <p>Beautiful books at affordable prices and an unforgettable experience<br>are available only for you! Declutter your mind and explore something new.</p>
+                    <a href="Products-1.html" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/imageb.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Categories-->
+    
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <a href="One-Of-Us-Is-Lying.html"><img src="images/books/ouil1.jpeg"></a>
+                    <br><br>
+                    <div> <h3 align="center">Fiction</h3></div>
+                </div>
+                <div class="col-3">
+                    <a href="Maybe-You-Should-Talk-To-Someone.html"><img src="images/books/talk-1.jpg"></a>
+                    <br><br>
+                    <div> <h3 align="center">Self-help</h3></div>
+                </div>
+                <div class="col-3"> 
+                    <a href="The-Silent-Patient.html">
+                    <img src="images/books/silent-1.jpeg"></a>
+                    <br><br>
+                    <div> <h3 align="center">Thriller</h3></div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <!--Products-->
+    
+    <div class="small-container"> 
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="One-Of-Us-Is-Lying.html"><img src="images/books/ouil1.jpeg"></a>  
+                <h4>One Of Us Is Lying</h4>
+                <div> <h5>Karen M. McManus</h5></div>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$5.00</p>
+            </div>
+            
+            <div class="col-4">
+                <a href="A-Good-Girls-Guide-to-Murder.html"><img src="images/books/murder-1.jpg"></a>
+                <a href="A-Good-Girls-Guide-to-Murder.html"><h4>A Good Girl's Guide to Murder</h4></a>
+                <div> <h5>Holly Jackson</h5></div>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$8.99</p>
+            </div>
+            
+            <div class="col-4">
+                <a href="Purple-Hearts.html"><img src="images/books/purple-1.jpeg"></a>
+                <a href="Purple-Hearts.html"><h4>Purple Hearts</h4></a>
+                <div> <h5>Tess Wakefield</h5></div>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$13.98</p>
+            </div>
+            
+            <div class="col-4">
+                <a href="We-Are-The-Brennans.html"><img src="images/books/bren-1.jpg"></a>
+                <h4>We Are The Brennans</h4>
+                <div> <h5>Tracey Lange</h5></div>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$14.00</p>
+            </div>
+        
+        <h2 class="title">Latest Products</h2>
+            <div class="row">
+            
+                <div class="col-4">
+                <a href="As-Good-As-Dead.html"><img src="images/books/dead-1.jpg"></a>
+                <h4>As Good As Dead</h4>
+                <div> <h5>Holly Jackson</h5></div>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$12.72</p>
+            </div> 
+            
+            <div class="col-4">
+                <a href="The-Humans.html"><img src="images/books/humans-1.jpeg"></a>
+                <a href="The-Humans.html"><h4>The Humans</h4></a>
+                <div> <h5>Matt Heig</h5></div>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$38.25</p>
+            </div>
+            
+            <div class="col-4">
+                <a href="Mrs-England.html"><img src="images/books/england-1.jpg"></a>
+                <h4>Mrs. Englang</h4>
+                <div> <h5>Stacey Halls</h5></div>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i> 
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$14.73</p>
+            </div>
+            
+            <div class="col-4">
+                <a href="Where-the-Crawdads-Sing.html"><img src="images/books/craw-1.jpeg"></a>
+                <a href="Where-the-Crawdads-Sing.html"><h4>Where the Crawdads Sing</h4></a>
+                <div> <h5>Delia Owens</h5></div>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$12.39</p>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!--Offers-->
+    
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="start">
+                    <img src="images/books/ouil1.jpeg" class="offer-img"  >
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available Now</p>
+                    <h1>One Of Us Is Lying</h1>
+                    <h5>Karen M. McManus</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <small>
+                <p>
+                <b>#1 NEW YORK TIMES BESTSELLER • NAMED ONE OF THE TEN BEST BOOKS OF THE YEAR BY ENTERTAINMENT WEEKLY • BUZZFEED • POPCRUSH</b>
+                <br><br>
+                <i><b>“Pretty Little Liars meets The Breakfast Club” (Entertainment Weekly) in this addictive mystery about what happens when five strangers walk into detention and only four walk out alive. </b></i>
+                <br><br>
+                Pay close attention and you might solve this.
+                </p>
+                    </small>
+                <a href="One-Of-Us-Is-Lying.html" class="btn">Buy Now &#8594;</a> 
+                <br><i>only $5.00 today</i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Review-->
+    
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3"> 
+                    <i class="fa fa-quote-left"></i>
+                    
+                    <p>Great place – reasonable prices – helpful staff</p>
+                    
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    
+                    <img src="images/user-1.png">
+                    <h3>Michaela Stone</h3>  
+                </div>
+                
+                <div class="col-3"> 
+                    <i class="fa fa-quote-left"></i>
+                    
+                    <p>Wonderful place that combines new and old. All the latest in books are here. The prices are a little too high!</p>
+                    
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    
+                    <img src="images/user-2.png">
+                    <h3>Barry Allen</h3>  
+                </div>
+                
+                <div class="col-3"> 
+                    <i class="fa fa-quote-left"></i>
+                    
+                    <p>What an amazing little bookstore. Very friendly. I found my new bookstore. Their prices are fantastic too. I’m very impressed.</p>
+                    
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    
+                    <img src="images/user-3.png">
+                    <h3>Kate Bush</h3>  
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Brands-->
+    
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/logos/penguin.png">
+                </div>
+                
+                <div class="col-5">
+                    <img src="images/logos/harper.png">
+                </div>
+
+                <div class="col-5">
+                    <img src="images/logos/ladybird.png">
+                </div>
+                
+                <div class="col-5">
+                    <img src="images/logos/macmillan.png">
+                </div>
+                
+                <div class="col-5">
+                    <img src="images/logos/simon.png">
+                </div>    
+            </div>
+        </div>
+    </div>
+    
+    <!--Footer-->
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and iOS mobile phone</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store/apps"><img src="images/play-store.png"></a>
+                        <a href="https://www.apple.com/app-store/"><img src="images/app-store.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <a href="Store.html"><img src="images/logo.png"></a>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="About.html">Blog Post</a></li>
+                        <li><a href="Contact.html">Return Policy</a></li>
+                        <li><a href="Account.html">Join Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com">Facebook</a></li>
+                        <li><a href="https://www.instagram.com">Instagram</a></li>
+                        <li><a href="twitter.com">Twitter</a></li>
+                    </ul>
+                </div>                
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022</p>
+        </div>
+    </div>
+    
+    <!--Javascript for Toggle Menu-->
+    
+    <script>
+        
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight="0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                MenuItems.style.maxHeight="200px"
+            else
+                MenuItems.style.maxHeight="0px"
+        }
+        
+    </script>
+    
+</body>
+</html>

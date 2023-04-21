@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Shopping Cart </title>
+	<link rel="stylesheet" href="Style.css">
+    
+    <!--Bootstrap Icons-->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+</head> 
+<body>
+    
+    <!--Header-->
+    
+    <div class="container">
+        <div class="navbar">                
+            <div class="logo">
+                <a href="Store.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+				<li><a href="Store.html">Home</a></li>
+				<li><a href="Products-1.html">Products</a></li>
+                <li><a href="About.html">About</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+                <li><a href="Account.html">Account</a></li>
+
+                <a href="Cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" width="20px" height="20px">    
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!--Cart Items Details-->
+    
+    <div class="small-container cart-page">
+        <table>
+            
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/books/ouil1.jpeg">
+                        <div>
+                            <p>One Of Us Is Lying</p>
+                            <div><h5>Karen M.McManus</h5></div>
+                            <br>
+                            <small>Price: $11.00</small>
+                            <br>
+                            <a href="" class="btn-3">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$11.00</td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/books/chimp-1.jpeg">
+                        <div>
+                            <p>The Chimp Paradox</p>
+                            <div><h5>Prof Steve Peters</h5></div>
+                            <br>
+                            <small>Price: $17.43</small>
+                            <br>
+                            <a href="" class="btn-3">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$17.43</td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/books/fam-1.jpg">
+                        <div>
+                            <p>The Familiars</p>
+                            <div><h5>Stacey Halls</h5></div>
+                            <br>
+                            <small>Price: $26.99</small>
+                            <br>
+                            <a href="" class="btn-3">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$26.99</td>
+            </tr>
+            
+        </table>
+        
+        <div class="total-price">
+            <table>
+                
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$49.32</td>
+                </tr>
+                
+                <tr>
+                    <td>Tax</td>
+                    <td>$6.10</td>
+                </tr>
+                
+                 <tr>
+                    <td>Shipping</td>
+                    <td>$5.00</td>
+                </tr>
+                
+                <tr>
+                    <td>Total</td>
+                    <td>$60.42</td>
+                </tr>
+                
+            </table>
+        </div>    
+    </div>
+
+    <!--Footer-->
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and iOS mobile phone</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store/apps"><img src="images/play-store.png"></a>
+                        <a href="https://www.apple.com/app-store/"><img src="images/app-store.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <a href="Store.html"><img src="images/logo.png"></a>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="About.html">Blog Post</a></li>
+                        <li><a href="Contact.html">Return Policy</a></li>
+                        <li><a href="Account.html">Join Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com">Facebook</a></li>
+                        <li><a href="https://www.instagram.com">Instagram</a></li>
+                        <li><a href="twitter.com">Twitter</a></li>
+                    </ul>
+                </div>                
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022</p>
+        </div>
+    </div>
+    
+    <!--Javascript for Toggle Menu-->
+    
+    <script>
+        
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight="0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                MenuItems.style.maxHeight="200px"
+            else
+                MenuItems.style.maxHeight="0px"
+        }
+        
+    </script>
+    
+        <!--JavaScript for Working Cart-->
+    
+    <script>
+        
+        var removeCartItemButtons = document.getElementsByClassName('btn-3');
+        console.log(removeCartItemButtons);
+        
+    </script>
+    
+</body>
+</html>

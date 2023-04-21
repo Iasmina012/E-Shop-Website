@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> About </title>
+	<link rel="stylesheet" href="Style.css">
+    
+    <!--RED font-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    
+    <!--Lover font-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    
+    <!--Bootstrap Icons-->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    
+</head> 
+<body>
+    
+    <!--Header-->
+    
+    <div class="container">
+        <div class="navbar">                
+            <div class="logo">
+                <a href="Store.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+				<li><a href="Store.html">Home</a></li>
+				<li><a href="Products-1.html">Products</a></li>
+                <li><a href="About.html">About</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+                <li><a href="Account.html">Account</a></li>
+
+                <a href="Cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" width="20px" height="20px">    
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="page-header">
+        <h2>#KnowUs
+        <i class="fa fa-address-card-o"></i>
+        </h2>
+        <p>We're happy, free, confused and lonely at the same time</p>
+    </div>
+    
+    <!--Description-->
+    
+    <div class="row">
+        <div class="about-col-1">
+            <h2>Who Are We
+            <i class="fa fa-question"></i>
+            </h2>
+            
+            <h3><b>Thanks to BookStore, there's no reason to buy books on Amazon anymore!</b></h3>
+            <p>
+            <br><br>
+            <i class="fa fa-gratipay"></i>
+            If <i>Borges</i> was right, and Paradise is a great library, we try to bring it to the readers. In addition to a very rich selection of books, we await you every time with book launches and exhibitions of acclaimed writers.
+            <br><br>
+            <i class="fa fa-gratipay"></i>
+            I think our main achievement has been to make reading "cool" again by providing the desire with a truly friendly place to meet, chat, build projects and last but not least, read.
+            <br><br>
+            <i class="fa fa-gratipay"></i>
+            The BookStore belongs to those who imagined it. Joining us in this ongoing exercise of imagination are all those who believe in the power of books to subtly change their lives. Customers are our most trusted partner and the most important commentator on our plans and actions.
+            </p>
+            <img src="https://i.gifer.com/origin/e4/e4cd0639b5a5c1e164aeff4370ed2365.gif">
+        </div>
+        <div class="about-col-2">
+            <br><br><br><img src="images/ts1.jpeg" width="500" height="600">
+        </div>
+    </div>
+    
+    <!--Newsletter-->
+    
+    <div class="newsletter">
+        <div class="newstext">
+            <h4>Sign Up for Newsletter</h4>
+            <p>Get E-mail updates about our latest shop and <span> special offers. </span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="E-mail Adress">
+            <button class="btn-2" onclick="location.href='mailto:ariana_grandex33@yahoo.com';">Sign Up</button> 
+        </div>
+    </div>
+    
+    <!--Footer-->
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and iOS mobile phone</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store/apps"><img src="images/play-store.png"></a>
+                        <a href="https://www.apple.com/app-store/"><img src="images/app-store.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <a href="Store.html"><img src="images/logo.png"></a>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="About.html">Blog Post</a></li>
+                        <li><a href="Contact.html">Return Policy</a></li>
+                        <li><a href="Account.html">Join Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com">Facebook</a></li>
+                        <li><a href="https://www.instagram.com">Instagram</a></li>
+                        <li><a href="twitter.com">Twitter</a></li>
+                    </ul>
+                </div>                
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022</p>
+        </div>
+    </div>
+    
+    <!--Javascript for Toggle Menu-->
+    
+    <script>
+        
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight="0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                MenuItems.style.maxHeight="200px"
+            else
+                MenuItems.style.maxHeight="0px"
+        }
+        
+    </script>
+    
+</body>
+</html>
